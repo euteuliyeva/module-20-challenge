@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gulp Roast Coffee</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+ <!-- Linking CSS-->
+  <link rel="stylesheet" href="styles.css">
+ <!-- Google fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+ <!---------- Font Awesome CDN ---------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+ <!-- Navigation-->
+ <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="#page-top"><img src="https://assets.codepen.io/6306176/gulp-logo-light.png" alt="Gulp Roast Coffee About Page" /></a> 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars ms-1"></i>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="coffee.html">Coffee</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://uxuicurriculum.wixsite.com/gulproast/locations">Locations</a></li>
+            <li class="nav-item"><a class="nav-link" href="contct_us.html">Contact</a></li>
+        </ul>
+      </div>
+  </div>
+</nav>
+
+<!-- Contact Us-->
+<section class="page-section" id="contact">
+  <div class="container">
+      <div class="text-center">
+          <h2 class="section-heading text-uppercase">Contact Us</h2>
+          <h3 class="section-subheading text-light">Please help us to make your experience at Gulp Roast Coffee even better. Your comments will help us to ensure you a first class coffee experience.</h3>
+      </div>
+      <!-- * * SB Forms Contact Form * *-->
+      <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+          <div class="row align-items-stretch mb-5">
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <!-- Name input-->
+                      <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
+                      <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                  </div>
+                  <div class="form-group">
+                      <!-- Email address input-->
+                      <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
+                      <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                      <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                  </div>
+                  <div class="form-group mb-md-0">
+                      <!-- Phone number input-->
+                      <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
+                      <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="form-group form-group-textarea mb-md-0">
+                      <!-- Message input-->
+                      <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
+                      <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                  </div>
+              </div>
+          </div>
+    
+          <!-- Submit Button-->
+          <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
+      </form>
+  </div>
+</section>
+
+<!-- Footer-->
+<footer class=" bg-dark py-2 mt-2">
+    <div class="container-sm text-center text-white">
+      <p>&copy;2022 Gulf Roast Coffee. All rights reserved.</p>
+      <p><small>This site is operated by Trilogy Education Services for educational purposes only. This is not a beauty products website. <br> This is a fictitious company and scenario intended only for internal academic purposes.</small></p>
+    </div>
+
+    <div class="text-center text-md">
+        <ul class="list-unstyled list-inline">
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com" class="btn-floating btn-lg text-white"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.twitter.com" class="btn-floating btn-lg text-white"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com" class="btn-floating btn-lg text-white"><i class="fab fa-instagram"></i></a>
+            </li>
+  
+        </ul>
+
+    </div>
+  </footer>
+
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+<!-- * *                               SB Forms JS                               * *-->
+<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+</html>
